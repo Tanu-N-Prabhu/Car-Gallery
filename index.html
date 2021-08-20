@@ -1,0 +1,197 @@
+<!--
+This is the Gallery page. Also known as "Photography" page, the CSS style sheet is referenced as "galleryStyles.css".
+I have used many libraries, code snippets, and icons to build this front page.
+Author: Tanu Nanda Prabhu
+-->
+
+<html>
+<head>
+    
+    <title>Photography</title>
+    <!-- Necessary libraries and hyper-links for the website -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/91e547386c.js" crossorigin= "anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+    
+</head>
+
+<style>
+
+    p{
+    font-size: 17px;
+    }
+
+    .main .container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    }
+    .main .card {
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    color: #333333;
+    border-radius: 2px;
+    }
+    .main .card-image {
+    background: #ffffff;
+    display: block;
+    padding-top: 70%;
+    position: relative;
+    width: 100%;
+    }
+    .main .card-image img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .main .container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    }
+    } 
+
+
+</style>
+    
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div class="container red topBotomBordersOut">
+   
+   
+    
+<main class="main">
+  <div class="container1">
+      
+      <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/CGIdiHvS6ZTKfdgHs9rtsBAjKITLP5v4HuzlOjRCcLtMtR7vcM8X9PTxWCJ5gPT-1-784Do0Qn9mPYNasjSJT1jtFYyxXba5Ls585EXDNxjqvjPeYWTwuRb6lRWlM5jagFGRrk9JNPFB5l66Vw6zWi5rr6smzXiw6brw6CJmwlMXUCkGqlDjL09TXCpiUk6B8xCeCmf4plJakGI5RYomia2VV74itM7LP5_xl9supxbWWi_ht5on7DfnD-fwhaYQ-s9f2ntXK3SJArjEDssTVKotw8EXyF1EF4cMEQzB5maFCQf-E1_vbmaEtS-UIIAavclpuDX4RxeRC7JQ_o3hEQevsCQ_-xDZCs1qo5pzELN821uiaM3H7U-iUp4GPrEKrKjR8WyIyh-zkLvnHaal_L3yAcfjMUcu2j6AjxCYBxxTys-GY65leU27gv_NLZEJeh8Z1IMh8hERhI9TQMoD4uZKIIGU0_LgIRxqeZ86yuWSFo__0mEZ7KKCkT8UT7N9bZcUtjj4GvUHDcv4HqOD99fO8wpfsqY9y8K1f23PoxkKkXl46TKdGw6M9kojicma808aYEa7rjvOppcPHkPIaGxe8x79peJXQ5P0R_0OoBrNlo0HHvYxL8NNGPXgOaTxQPqEoHsO5jn8u9o8nJ2bSt3dtbYc5SVBee0ZOtxjQ6a3l_8-2CfGAgbk3Hm26WdKSj7h16arbls-qQDJN-qZdSIp=w686-h914-no?authuser=0" data-fancybox="gallery" data-caption="Audi A8">
+          <img src="https://lh3.googleusercontent.com/CGIdiHvS6ZTKfdgHs9rtsBAjKITLP5v4HuzlOjRCcLtMtR7vcM8X9PTxWCJ5gPT-1-784Do0Qn9mPYNasjSJT1jtFYyxXba5Ls585EXDNxjqvjPeYWTwuRb6lRWlM5jagFGRrk9JNPFB5l66Vw6zWi5rr6smzXiw6brw6CJmwlMXUCkGqlDjL09TXCpiUk6B8xCeCmf4plJakGI5RYomia2VV74itM7LP5_xl9supxbWWi_ht5on7DfnD-fwhaYQ-s9f2ntXK3SJArjEDssTVKotw8EXyF1EF4cMEQzB5maFCQf-E1_vbmaEtS-UIIAavclpuDX4RxeRC7JQ_o3hEQevsCQ_-xDZCs1qo5pzELN821uiaM3H7U-iUp4GPrEKrKjR8WyIyh-zkLvnHaal_L3yAcfjMUcu2j6AjxCYBxxTys-GY65leU27gv_NLZEJeh8Z1IMh8hERhI9TQMoD4uZKIIGU0_LgIRxqeZ86yuWSFo__0mEZ7KKCkT8UT7N9bZcUtjj4GvUHDcv4HqOD99fO8wpfsqY9y8K1f23PoxkKkXl46TKdGw6M9kojicma808aYEa7rjvOppcPHkPIaGxe8x79peJXQ5P0R_0OoBrNlo0HHvYxL8NNGPXgOaTxQPqEoHsO5jn8u9o8nJ2bSt3dtbYc5SVBee0ZOtxjQ6a3l_8-2CfGAgbk3Hm26WdKSj7h16arbls-qQDJN-qZdSIp=w686-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+      
+      
+    <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/ezPQLG0a_f7NSDsDMnhKxdIgunxYVnoPTKa9wRCs-WYhr7H7a_i7xUwuMZPHNJJRRIjqDCdtn4YuKKg9MVRp4elpFkK-Hg_tu0b3Y13xEcHmaaY_kklmPHxgSQzdWoAf50qq5pOMon1aEBb8ALGNI5DdLWsV8yDOCbXzQcjNGzn247NBC1RWGb50l7w-EVj3Km9zKkvPJOJ73I7xa1q9DbCZ3pMmDpt9-KBjEncIU9H7LvheVcSvRDSUyEGXD9VBZ1VE556n3h85v1g5bBv7b8oCBpF6DzdvKhoHz1pxkOehXGmZ-IoVHJG9zaQtjcNG6GVWkt6HiaUgDwa9MkZ8gvfKbGk20_DEa69bL6Qw_SOQO3d_Ht_iexMIo_RKbUM7ArWHj-jdUjsZXGoFvVvLByDjdh_Qyauscb8VDEZP2PKbgRL-n6VbNhpdLDe7cuZyDLDMoGB0hjxWWLCfNT1I63tJ2I7gYfSI5AOpgwLuP74OyzTxinY2BFfYjO5cnK_H3QBrez4UGDKqlCdLkmYrr4Y6ENmxH50pcHCXJ9M1MtRm4g7zIQwuJPZNuHkk_uimQ-UEmTa3H9hp6zDEqXQuHyNiPvGB-c6ODcLtyQq9XBS1B_-Jm1ru_RHEGJ_9P61t7VkcnXmqaPX9MMKgjtjy9rscjXPuARlV02QiM648clhVik9tQUg9zzkoACsrf5PVhYQaB_Z00qCKEuXXPNtjudEdFZSpabdm5Mtw99ljELega9j9U0HaJqtZgH5ITfsUJFO6JZLbzSXNCWHQey8aAPAa6zF23bxAK4_BlQB4WmV7Hg9JOZPWDPFHpQD9T1qSuSK9pmrJknAjyM2aMLSEivsm=w686-h914-no?authuser=0" data-fancybox="gallery" data-caption="Mercedes Benz CLA 200">
+          <img src="https://lh3.googleusercontent.com/ezPQLG0a_f7NSDsDMnhKxdIgunxYVnoPTKa9wRCs-WYhr7H7a_i7xUwuMZPHNJJRRIjqDCdtn4YuKKg9MVRp4elpFkK-Hg_tu0b3Y13xEcHmaaY_kklmPHxgSQzdWoAf50qq5pOMon1aEBb8ALGNI5DdLWsV8yDOCbXzQcjNGzn247NBC1RWGb50l7w-EVj3Km9zKkvPJOJ73I7xa1q9DbCZ3pMmDpt9-KBjEncIU9H7LvheVcSvRDSUyEGXD9VBZ1VE556n3h85v1g5bBv7b8oCBpF6DzdvKhoHz1pxkOehXGmZ-IoVHJG9zaQtjcNG6GVWkt6HiaUgDwa9MkZ8gvfKbGk20_DEa69bL6Qw_SOQO3d_Ht_iexMIo_RKbUM7ArWHj-jdUjsZXGoFvVvLByDjdh_Qyauscb8VDEZP2PKbgRL-n6VbNhpdLDe7cuZyDLDMoGB0hjxWWLCfNT1I63tJ2I7gYfSI5AOpgwLuP74OyzTxinY2BFfYjO5cnK_H3QBrez4UGDKqlCdLkmYrr4Y6ENmxH50pcHCXJ9M1MtRm4g7zIQwuJPZNuHkk_uimQ-UEmTa3H9hp6zDEqXQuHyNiPvGB-c6ODcLtyQq9XBS1B_-Jm1ru_RHEGJ_9P61t7VkcnXmqaPX9MMKgjtjy9rscjXPuARlV02QiM648clhVik9tQUg9zzkoACsrf5PVhYQaB_Z00qCKEuXXPNtjudEdFZSpabdm5Mtw99ljELega9j9U0HaJqtZgH5ITfsUJFO6JZLbzSXNCWHQey8aAPAa6zF23bxAK4_BlQB4WmV7Hg9JOZPWDPFHpQD9T1qSuSK9pmrJknAjyM2aMLSEivsm=w686-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+      
+    <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/mI5ysgqX08GV07W98aMd49oBB67inK0nlrzy4_n-Tm6FAyFvWqIFQHX4Cbi2F4VVX98ehN0f-8x-yepZRlPDj0MEPJQJF6lCx5tsQsdYsfe4VXLYtuXPrKXB4tIpAjj-Z3gBaCE3fs6ms8KYb9WxspNykg8IAn8TMi40fiRzre1ymwuncE3aAlKALcJJzaZxtGhvA4WYq9TFaDD129Ylry4wIfRCftgYrPjNuyGxMrsoA3lNwga2II09kyVUw_AMEkn2Dvd7sAUS1erCoo6EEk9boJMki-4iK2B2RR-tCl6HcXYhLiUQ7ngkpca8UrU1-KVAj6Xsl0fIu3iMITDZlBYF_Mqb8NBTy382k0JjgmpkuEkr7UmjXtJcz019F0jmUuRhQDiUJcA_KUvHn_hg4Lt-MRXoUL6SVWGSSN0xLnmabapZPOibHcVErOrk0Mm7grPAGMAPXwowQOGCi8I_g57XwrwyN4l7-_8HhWBd9N3oLQp14Lp4wPgWIdcxvGkILFMmD5bp0PO-7RoXoXW2AtmWMz3K0oIq1eyvS_aNlHsok5E6_yPaoSO6cEozgLB-cdFa7HP3eaTHYFbckrUy0jfrUYs9nZduNypyF0uVNkWMEuJEHB_l01702lfwfNO1MHNyD4qU-WWdS_zoc1N9DZ9UK4OYMpKKMUGBHPDmORTR6Dw0-A4GUYld6A03vV_CMQkR4RGLXw_OSYabEYv5q7hg=w515-h914-no?authuser=0" data-fancybox="gallery" data-caption="Mercedes ML 250 CDI">
+          <img src="https://lh3.googleusercontent.com/mI5ysgqX08GV07W98aMd49oBB67inK0nlrzy4_n-Tm6FAyFvWqIFQHX4Cbi2F4VVX98ehN0f-8x-yepZRlPDj0MEPJQJF6lCx5tsQsdYsfe4VXLYtuXPrKXB4tIpAjj-Z3gBaCE3fs6ms8KYb9WxspNykg8IAn8TMi40fiRzre1ymwuncE3aAlKALcJJzaZxtGhvA4WYq9TFaDD129Ylry4wIfRCftgYrPjNuyGxMrsoA3lNwga2II09kyVUw_AMEkn2Dvd7sAUS1erCoo6EEk9boJMki-4iK2B2RR-tCl6HcXYhLiUQ7ngkpca8UrU1-KVAj6Xsl0fIu3iMITDZlBYF_Mqb8NBTy382k0JjgmpkuEkr7UmjXtJcz019F0jmUuRhQDiUJcA_KUvHn_hg4Lt-MRXoUL6SVWGSSN0xLnmabapZPOibHcVErOrk0Mm7grPAGMAPXwowQOGCi8I_g57XwrwyN4l7-_8HhWBd9N3oLQp14Lp4wPgWIdcxvGkILFMmD5bp0PO-7RoXoXW2AtmWMz3K0oIq1eyvS_aNlHsok5E6_yPaoSO6cEozgLB-cdFa7HP3eaTHYFbckrUy0jfrUYs9nZduNypyF0uVNkWMEuJEHB_l01702lfwfNO1MHNyD4qU-WWdS_zoc1N9DZ9UK4OYMpKKMUGBHPDmORTR6Dw0-A4GUYld6A03vV_CMQkR4RGLXw_OSYabEYv5q7hg=w515-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+      
+      
+          <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/Gylrp1mUIG8QYcW4dDs91A7Whgck5e0iMNwXU_raE7GGu1-M0aEZBFrffU316iO-KV_L5rlNWMOslKfPRn169CorpLJoNw1iE1L7kWZA3VL-TWiXB_L0SvsLHEbxbkh_4xm2qJqsLn-O96hCinrYq3JHaXpOYURdHd4QzvZwv44iSr_EpIzVk3caKh3pe7ULQF7hMfzDsZy-WhvlsLLVTy4WpKLwwM1d7CXDMfDMFm3VMssryFsW6hw_4MJZowfbi4KoFaWUrGT4AhKivPwwLv8KtN49lvQ04SWNdqiApdydZLwEjphWWNIa4NXlPrqNHXeqeYaNs2nsPWhSkrfSeeW7vZH2IvnpngvH6O7w7qFW2TEkfuNCur7kTqrLOBZgjzJJoVeSGpEOmCYsD2kXGGlAeTpJK7iBA4StSqXaoIXADgG0gMDL4f-TDYuyXIEv8EUDHPa1D6o_8C_UDU7GJHVxkLWomsfVDJxbcxkjMaLhcGZjPNLuSW52pIpn-SwgAmEjqxb7L8GB-LE3ykG7PDnQ00IhCaPvLunlYScCWanLpZ2xEz-f4zHIlkfl_x-QI-VvHVBO3T1roPTGaJOhuC0N8SPnpvFJWmNb-xy0nXPfChbZBMJ_DNtZVjIkMnybX-DRY0IkbNhddv3gQOGZCRDIFkzHUaKcba0jBzih5AxffJg8iPdRe7o2p-lUV-aQhy5xSIK4CpvyROwXwpftUusr0w=w686-h914-no?authuser=0" data-fancybox="gallery" data-caption="Mercedes Benz CLA 200">
+          <img src="https://lh3.googleusercontent.com/Gylrp1mUIG8QYcW4dDs91A7Whgck5e0iMNwXU_raE7GGu1-M0aEZBFrffU316iO-KV_L5rlNWMOslKfPRn169CorpLJoNw1iE1L7kWZA3VL-TWiXB_L0SvsLHEbxbkh_4xm2qJqsLn-O96hCinrYq3JHaXpOYURdHd4QzvZwv44iSr_EpIzVk3caKh3pe7ULQF7hMfzDsZy-WhvlsLLVTy4WpKLwwM1d7CXDMfDMFm3VMssryFsW6hw_4MJZowfbi4KoFaWUrGT4AhKivPwwLv8KtN49lvQ04SWNdqiApdydZLwEjphWWNIa4NXlPrqNHXeqeYaNs2nsPWhSkrfSeeW7vZH2IvnpngvH6O7w7qFW2TEkfuNCur7kTqrLOBZgjzJJoVeSGpEOmCYsD2kXGGlAeTpJK7iBA4StSqXaoIXADgG0gMDL4f-TDYuyXIEv8EUDHPa1D6o_8C_UDU7GJHVxkLWomsfVDJxbcxkjMaLhcGZjPNLuSW52pIpn-SwgAmEjqxb7L8GB-LE3ykG7PDnQ00IhCaPvLunlYScCWanLpZ2xEz-f4zHIlkfl_x-QI-VvHVBO3T1roPTGaJOhuC0N8SPnpvFJWmNb-xy0nXPfChbZBMJ_DNtZVjIkMnybX-DRY0IkbNhddv3gQOGZCRDIFkzHUaKcba0jBzih5AxffJg8iPdRe7o2p-lUV-aQhy5xSIK4CpvyROwXwpftUusr0w=w686-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+      
+      
+      
+    <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/GoAJiZccdNE_NX2kVoVGsS3oTz6LCADBzCxB7WJ188vHVWqaIw4uQgzFfd6RpB8yyZyhIQJ_j4cMARhy9EFHhyhx6P2ZBtVDuIv2pIU2wwUy36YKv1CAfHq1IpAWK75FAP_sjqkR_o8uTboIlbeU_AcEPPcik82xrbnFpwEbDH7v0wbGYfQlB8Bwuy8IerJ73-JsTd-IH30tFLy8kvfxfLJfXC6COCBNgDVNBDt-tkIQ8mU1re8UNbWnEcwZ9AXhJe9Gu622YEz9dq2haZ09rpx791Tdcf4GlhID2AZjjb4MCHA09flBYQ8cVAClpJbYNNTiJGAbG6O8Bhlxc3b4KawtFHmjP5DWiNqsNaOqgBMu-luua3hnD6hGnjrBnOMknC7aJbmP8FxzwojzuFec4lDJSSXzlHDUgX_WUmfD2J4nydhHnVB4fhz7Te7tZaotsyKQIzUnoAXSz7HVnpzTQN8oB1HfeaNsjODBPDr92_UdvRa8CO1ZzL1AlDBucgu4AFDKj8gcu0U1OJDHm_yxJ9okMfWiMAgAF8M7qvBfwuEpKsT2xQb5YKh89gy8NzboB9x53JY8wuI9xme4EGn3dDlbuOrVaC01rRg5iL8hcqA7tJvvLKQTp1reovwLreTQOhPEaiDcbVSiXtpMCP-4MFH7JJGhu7cgFJWEfVQiPmr0kdRQjP8lpAd3pfv-mcw9KMKBvizVBhWH-KsXt3iRlWQO=w515-h914-no?authuser=0" data-fancybox="gallery" data-caption="BMW X1">
+          <img src="https://lh3.googleusercontent.com/GoAJiZccdNE_NX2kVoVGsS3oTz6LCADBzCxB7WJ188vHVWqaIw4uQgzFfd6RpB8yyZyhIQJ_j4cMARhy9EFHhyhx6P2ZBtVDuIv2pIU2wwUy36YKv1CAfHq1IpAWK75FAP_sjqkR_o8uTboIlbeU_AcEPPcik82xrbnFpwEbDH7v0wbGYfQlB8Bwuy8IerJ73-JsTd-IH30tFLy8kvfxfLJfXC6COCBNgDVNBDt-tkIQ8mU1re8UNbWnEcwZ9AXhJe9Gu622YEz9dq2haZ09rpx791Tdcf4GlhID2AZjjb4MCHA09flBYQ8cVAClpJbYNNTiJGAbG6O8Bhlxc3b4KawtFHmjP5DWiNqsNaOqgBMu-luua3hnD6hGnjrBnOMknC7aJbmP8FxzwojzuFec4lDJSSXzlHDUgX_WUmfD2J4nydhHnVB4fhz7Te7tZaotsyKQIzUnoAXSz7HVnpzTQN8oB1HfeaNsjODBPDr92_UdvRa8CO1ZzL1AlDBucgu4AFDKj8gcu0U1OJDHm_yxJ9okMfWiMAgAF8M7qvBfwuEpKsT2xQb5YKh89gy8NzboB9x53JY8wuI9xme4EGn3dDlbuOrVaC01rRg5iL8hcqA7tJvvLKQTp1reovwLreTQOhPEaiDcbVSiXtpMCP-4MFH7JJGhu7cgFJWEfVQiPmr0kdRQjP8lpAd3pfv-mcw9KMKBvizVBhWH-KsXt3iRlWQO=w515-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/3GVWaNHo4UzIrmNvH6YWJ44uLKjFuFsbDF701Ol8L3LR6TPcaHUjhPsHaS2uBdZ5CrMqH0DPNAzBUe-qKtuOQStS93IYhbnutKy0i0wzuIHq3P32sqtEyVfzR1lrlpxbyyOHbWI_ENOKa9ic8oq9SIe_ROZM9XB8xP-99kWgiCpjt7Hm9MXolkfpHU-xthDSsSfmtZKjvA9LbDQOKJDS00qJr83BvaCHx2poBPbCyWNQU8VQLPg5OMcUpQdoWHc5pTNqH3MtVFvh_ZuKM8Vq4l85R4jX5iFmQoikjvqfnmjwODbIedFpnZv9AC1zH_97ruTW5AkcByMHXNdvJ7gWsnJrMuq3f3lXU8Z2ljRuY-v7hoJ-5_i1Lp18se0wIuM_tHaTyL_fUS8r8fy5P7fZqlTPNvh31WdkHIPAak-ab5R2k-M2z8WhrY0D6wnmvN5-qFqaayu0OJgziNwzkrNBJYJUR_FJMAEEYPKRyHzG3-ETZ6WlEI4DFgB0rUmxiT7m2if2bMr1QWhXXGkNNW3GtLn45mJLVRThHL3PLQUCZD_dj0H4UNlFkFiUSF774CfTYehuo4CqaCWqJSgzCJEjo2wZpgfFmruv9w_Xg2lz1-8FZ6l8LAnSA_1j0drRkXwnmrsWI7VmHa7t5Z7Ahr8kMZAYlZa254iL_uX7CWZAGDgeN16KfeKKidVMPo8ztj9R3ak9jG1D4N8Bnwm2TGZ6x3XbOQ=w1625-h914-no?authuser=0" data-fancybox="gallery" data-caption="Nissan GTR">
+          <img src="https://lh3.googleusercontent.com/3GVWaNHo4UzIrmNvH6YWJ44uLKjFuFsbDF701Ol8L3LR6TPcaHUjhPsHaS2uBdZ5CrMqH0DPNAzBUe-qKtuOQStS93IYhbnutKy0i0wzuIHq3P32sqtEyVfzR1lrlpxbyyOHbWI_ENOKa9ic8oq9SIe_ROZM9XB8xP-99kWgiCpjt7Hm9MXolkfpHU-xthDSsSfmtZKjvA9LbDQOKJDS00qJr83BvaCHx2poBPbCyWNQU8VQLPg5OMcUpQdoWHc5pTNqH3MtVFvh_ZuKM8Vq4l85R4jX5iFmQoikjvqfnmjwODbIedFpnZv9AC1zH_97ruTW5AkcByMHXNdvJ7gWsnJrMuq3f3lXU8Z2ljRuY-v7hoJ-5_i1Lp18se0wIuM_tHaTyL_fUS8r8fy5P7fZqlTPNvh31WdkHIPAak-ab5R2k-M2z8WhrY0D6wnmvN5-qFqaayu0OJgziNwzkrNBJYJUR_FJMAEEYPKRyHzG3-ETZ6WlEI4DFgB0rUmxiT7m2if2bMr1QWhXXGkNNW3GtLn45mJLVRThHL3PLQUCZD_dj0H4UNlFkFiUSF774CfTYehuo4CqaCWqJSgzCJEjo2wZpgfFmruv9w_Xg2lz1-8FZ6l8LAnSA_1j0drRkXwnmrsWI7VmHa7t5Z7Ahr8kMZAYlZa254iL_uX7CWZAGDgeN16KfeKKidVMPo8ztj9R3ak9jG1D4N8Bnwm2TGZ6x3XbOQ=w1625-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/jAD7294RISVW5HaB5o_jatxYLFS-331OuRTL2f7ZYj3HUYRQvnIo6i3YTGhrFhHR1T3g2Gxzzo0HNnoW81x3LWiif9DHEwo4TRuRmkAPa3-PtmAYA-e0ucJ6kw_yLpxqqY4n2nvK36njRH6wVyA6IrxhCnl4g2-PaAaImjg9GSG53GG3oxTJAqJlANcX6cz_wVVWyxm87TngrI-adROj2I6xUNfPbGmNrPhH1sI603SvmPamK1f4tSG8_YpZvKMAoRYJFvwUPfiLH8REB1KBkzeNqcn6wfM_cUS-3t7JT3flxsweBIa-pi2w5vQLYZREi09xxAj3T4nFXh-SPLx8yjBaShjP760iWYFQRf7q2-mviiSzgP2BFmXV1-HO4Wpdklqp676WWu0zQQbxJOTY9jcLWJ1Bao07EWICkz7JAeW3UJPO4UvjuUqAeFXVWWNmXz9g3hS2-GY-WFZEIdRmHKR2jdF9QN2eLiDWA3mlojS5q8qSSFH18JsZMj7QjlJrEg5WgrW-HureMrj68amEXUb0sFKzMysUUF-DYxP-VR-TEybdtK4MuE5DLpTugoKE-zY3L92ArLE68wpgVMDRyBWy-5DESO6XuHmEYa93nFlhdIP2CpbFHLEmPq0NFBtYdsS6u76-kBNyjdsyYQIqn5Lz8KNV3JEUQWOuH1F7QVin_quek70JOkrkC0Y2IiyOaGH7hcauP13RyqjHprl7OLoyIA=w834-h914-no?authuser=0" data-fancybox="gallery" data-caption="Mercedes Benz E250 CDI">
+          <img src="https://lh3.googleusercontent.com/jAD7294RISVW5HaB5o_jatxYLFS-331OuRTL2f7ZYj3HUYRQvnIo6i3YTGhrFhHR1T3g2Gxzzo0HNnoW81x3LWiif9DHEwo4TRuRmkAPa3-PtmAYA-e0ucJ6kw_yLpxqqY4n2nvK36njRH6wVyA6IrxhCnl4g2-PaAaImjg9GSG53GG3oxTJAqJlANcX6cz_wVVWyxm87TngrI-adROj2I6xUNfPbGmNrPhH1sI603SvmPamK1f4tSG8_YpZvKMAoRYJFvwUPfiLH8REB1KBkzeNqcn6wfM_cUS-3t7JT3flxsweBIa-pi2w5vQLYZREi09xxAj3T4nFXh-SPLx8yjBaShjP760iWYFQRf7q2-mviiSzgP2BFmXV1-HO4Wpdklqp676WWu0zQQbxJOTY9jcLWJ1Bao07EWICkz7JAeW3UJPO4UvjuUqAeFXVWWNmXz9g3hS2-GY-WFZEIdRmHKR2jdF9QN2eLiDWA3mlojS5q8qSSFH18JsZMj7QjlJrEg5WgrW-HureMrj68amEXUb0sFKzMysUUF-DYxP-VR-TEybdtK4MuE5DLpTugoKE-zY3L92ArLE68wpgVMDRyBWy-5DESO6XuHmEYa93nFlhdIP2CpbFHLEmPq0NFBtYdsS6u76-kBNyjdsyYQIqn5Lz8KNV3JEUQWOuH1F7QVin_quek70JOkrkC0Y2IiyOaGH7hcauP13RyqjHprl7OLoyIA=w834-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/pQdXBm7Xu0l9hxGCYQtuZpVZLWF9HdxRAeV3YDN1T0-nOTLtysSjh5Rw8Hd0O_N7R31DWUulJzwwk1iBOA_0zyW4Lz5HE6fiG0Y2IT3hxIkUlGyjNTawS8SORhiN43nomeTOwJbqEQLvjhCMywJ-LJXkj-UtdjHeYGEfpRm2eaj6gMtz0_0pCnJ2ONpQaDzOI51lBaSJn1_2k0iqJtqsAAHTqR2FFRAX19-d5X0bQ1rUEDv790ZOf9AfOU06soqB_GP3JjjKjEXviRpGmAxhgWHNFUUz9N-1egkd6o9YhLnMnH_vnXb0w3Iny_OfDTrF3A2RSYN48zRzDLM34let5qsf7yzzhR-w3k3bsKKWcRZEHkuyxS4UKyG8BUncIfimQxuK4TSNjvBhIIgmi6BRI0rmvy1eBlzj0LJccumcsa9EBG86rkPV37RDVO7vjM0sdpEagz0ghXhRqNzV20tYu1_VSpLTdXWHxlHL-dpN7nneQnBl8Zp_xW-Q4Kb8Aq4Y4mcxF9dDocCwEZnFhq2vJo3dnk5jouS3Jd9pHEEeqjiIe2PZO4TKTrXm54An5WDwAK99r17U7rlJMW5v7ZyZFIzcfp16he_xFzHdKn9I-OSOuExefOPqCe9WvIB5X_6d-xX2p6-OWYgdR0Muz3TtA6CDT-TKF8H94OExSbMfiG5UOUhonJRHJVZNGKIB-k-VF9kRNionVujojq3G8pOWIGtX9w=w972-h914-no?authuser=0" data-fancybox="gallery" data-caption="Volvo S60">
+          <img src="https://lh3.googleusercontent.com/pQdXBm7Xu0l9hxGCYQtuZpVZLWF9HdxRAeV3YDN1T0-nOTLtysSjh5Rw8Hd0O_N7R31DWUulJzwwk1iBOA_0zyW4Lz5HE6fiG0Y2IT3hxIkUlGyjNTawS8SORhiN43nomeTOwJbqEQLvjhCMywJ-LJXkj-UtdjHeYGEfpRm2eaj6gMtz0_0pCnJ2ONpQaDzOI51lBaSJn1_2k0iqJtqsAAHTqR2FFRAX19-d5X0bQ1rUEDv790ZOf9AfOU06soqB_GP3JjjKjEXviRpGmAxhgWHNFUUz9N-1egkd6o9YhLnMnH_vnXb0w3Iny_OfDTrF3A2RSYN48zRzDLM34let5qsf7yzzhR-w3k3bsKKWcRZEHkuyxS4UKyG8BUncIfimQxuK4TSNjvBhIIgmi6BRI0rmvy1eBlzj0LJccumcsa9EBG86rkPV37RDVO7vjM0sdpEagz0ghXhRqNzV20tYu1_VSpLTdXWHxlHL-dpN7nneQnBl8Zp_xW-Q4Kb8Aq4Y4mcxF9dDocCwEZnFhq2vJo3dnk5jouS3Jd9pHEEeqjiIe2PZO4TKTrXm54An5WDwAK99r17U7rlJMW5v7ZyZFIzcfp16he_xFzHdKn9I-OSOuExefOPqCe9WvIB5X_6d-xX2p6-OWYgdR0Muz3TtA6CDT-TKF8H94OExSbMfiG5UOUhonJRHJVZNGKIB-k-VF9kRNionVujojq3G8pOWIGtX9w=w972-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+      
+      <div class="card">
+      <div class="card-image">
+        <a href="https://lh3.googleusercontent.com/ytnav5dPHDdunhSb8r2CSR40blLV6fGYbG1F6uC27nPg9MyGgx5MPV_bnhlLr5kLbt8FdFk_bj_EFfsBDB_I5alkfDcc8RNpWUwOBKYxDmVnffA2J4ICy5t-TqS5GhjNGt5ROR71iQL2LNBzJTH1k5HNL36CtrUvaZT82eirO_wDu2rMJSqOfdKNrNN9AGAOb7FBgblHietIiUpo5oK9cbDP2cjeI8_2rMRUg8jNJgfPv2SuIIEABMdX13K0-8GVXNVbnZV-Rjygd64VQvkM-e2YOchJ6lmirCVxAQBvT5Mc6G-WZoIvGdl88N_z2PI2kPFAP9qrTSGAx8KgZaw5NlTPnuNyuzAmuHaU1XHmWWrVrm2gmDO-rS694i50li_g2rhsxpa3XE7vWGxtLssjNq-r5t4vGqBBBjWqZxfkXuBQ-fbIP4Y3xq2pEiN0UTECkVi_jE3nvzt9FqGxzyxh-fwnL8xtqW33nhCbaQdL942B5m8F2Idttj0_AiA5xKdVWc0Tokfs5ojUSjNqS83HTsdjhMboNRs8UsoystRMccFsRDA5hal4NZmY14-uQNg0bJl50jQZdrqwg4xmZg68lkhBnnOyJGEslwxJNPLRPOOjIFHyhMm-uhdb8ncrdqlMBasrlD1HtC7GR85aZxYanlnicqjdCNsG5hPvnCKm4TWZ6q6vzBCnm6v_QmcthuXrNwv6va3ibR32wr2QrX4vhEGi3azFh-lZp22LNgON4gNjYnuBnria9dwvv5_xv-XCtzusaXNZl_5fj7SolUXthQc4ssbgQMl73HRkVokGNi4xqHkdtEsmO1XpRaCjHgzh93OONzQlEKp5YmFRRcyCIryb=w752-h914-no?authuser=0" data-fancybox="gallery" data-caption="Range Rover Discovery">
+          <img src="https://lh3.googleusercontent.com/ytnav5dPHDdunhSb8r2CSR40blLV6fGYbG1F6uC27nPg9MyGgx5MPV_bnhlLr5kLbt8FdFk_bj_EFfsBDB_I5alkfDcc8RNpWUwOBKYxDmVnffA2J4ICy5t-TqS5GhjNGt5ROR71iQL2LNBzJTH1k5HNL36CtrUvaZT82eirO_wDu2rMJSqOfdKNrNN9AGAOb7FBgblHietIiUpo5oK9cbDP2cjeI8_2rMRUg8jNJgfPv2SuIIEABMdX13K0-8GVXNVbnZV-Rjygd64VQvkM-e2YOchJ6lmirCVxAQBvT5Mc6G-WZoIvGdl88N_z2PI2kPFAP9qrTSGAx8KgZaw5NlTPnuNyuzAmuHaU1XHmWWrVrm2gmDO-rS694i50li_g2rhsxpa3XE7vWGxtLssjNq-r5t4vGqBBBjWqZxfkXuBQ-fbIP4Y3xq2pEiN0UTECkVi_jE3nvzt9FqGxzyxh-fwnL8xtqW33nhCbaQdL942B5m8F2Idttj0_AiA5xKdVWc0Tokfs5ojUSjNqS83HTsdjhMboNRs8UsoystRMccFsRDA5hal4NZmY14-uQNg0bJl50jQZdrqwg4xmZg68lkhBnnOyJGEslwxJNPLRPOOjIFHyhMm-uhdb8ncrdqlMBasrlD1HtC7GR85aZxYanlnicqjdCNsG5hPvnCKm4TWZ6q6vzBCnm6v_QmcthuXrNwv6va3ibR32wr2QrX4vhEGi3azFh-lZp22LNgON4gNjYnuBnria9dwvv5_xv-XCtzusaXNZl_5fj7SolUXthQc4ssbgQMl73HRkVokGNi4xqHkdtEsmO1XpRaCjHgzh93OONzQlEKp5YmFRRcyCIryb=w752-h914-no?authuser=0" alt="Image Gallery">
+        </a>
+      </div>
+    </div>
+    
+
+    <br>
+    <br>
+    <br>
+      
+   
+  </div>
+</main>
+
+    
+</div>
+
+
+    
+    
+<!--Fancy Box Referencing -->    
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+
+<!-- JavaScript Referencing -->
+<script>
+
+    // Fancybox Config
+    $('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+        "slideShow",
+        "thumbs",
+        "zoom",
+        "fullScreen",
+        "share",
+        "close"
+    ],
+    loop: false,
+    protect: true
+    });
+    
+</script>
+
+
+</body>
+</html>
